@@ -1,6 +1,0 @@
-Django>=4.2,<4.3
-djangorestframework
-openai
-markdown
-mysqlclient
-PyGithub
