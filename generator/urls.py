@@ -4,7 +4,9 @@ from . import views
 
 urlpatterns = [
     path('', views.index, name="index"),  # ルートページ
-    path('generate/', views.generate_question, name="generate_question"),
+    path('generate_simple/', views.generate_question, name="generate_question"),  # 一問一答生成エンドポイント
+    path('generate_4choice/', views.generate_question_4choice, name="generate_question_4choice"),  # 四択問題生成エンドポイント
+    path('generate_hole/', views.generate_question_hole, name="generate_question_hole"),  # 穴埋め問題生成エンドポイント
 ]
 
 
